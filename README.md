@@ -1,23 +1,29 @@
+# Viral Sound Board & Video Platform
 
-## Contributing
+A modern web application that provides a collection of viral sounds and videos with an intuitive interface and premium package options.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Features
 
-## License
+### 1. Sound Board
+- Interactive sound buttons with visual feedback
+- Categorized sounds (Arabic & English)
+- Stop all sounds functionality
+- Modern UI with glowing effects
+- Mobile-responsive design
 
-This project is licensed under the MIT License - see the LICENSE file for details
+### 2. Video Showcase
+- Mobile device frame presentation
+- Multiple video support
+- Responsive video player
+- Custom video controls
 
-## Acknowledgments
+### 3. Premium Packages
+- Three distinct categories:
+  - Sound Only Packages
+  - Video Only Packages
+  - Premium Mix Packages (Sound & Video)
+- Modern card-based layout
+- Dynamic pricing display
+- Interactive purchase buttons
 
-- Sound effects sourced from various creators
-- Video content from original creators
-- UI inspiration from modern web applications
-
-## Contact
-
-Your Name - your.email@example.com
-Project Link: [https://github.com/yourusername/project-name](https://github.com/yourusername/project-name)
+## Project Structure 
