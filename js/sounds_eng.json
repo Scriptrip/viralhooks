@@ -1,0 +1,37 @@
+[
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/sad-meow-song.mp3",
+    "title": "sad meow song",
+    "audio": "sound/sound_us/sad-meow-song.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/vine-boom.mp3",
+    "title": "VINE BOOM SOUND",
+    "audio": "sound/sound_us/vine-boom.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/tf_nemesis.mp3",
+    "title": "Sad Violin (the meme one)",
+    "audio": "sound/sound_us/tf_nemesis.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/discord-call-sound.mp3",
+    "title": "discord call",
+    "audio": "sound/sound_us/discord-call-sound.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/discord-notification.mp3",
+    "title": "Discord Notification",
+    "audio": "sound/sound_us/discord-notification.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/rizz-sound-effect.mp3",
+    "title": "rizz sound effect",
+    "audio": "sound/sound_us/rizz-sound-effect.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/movie_1.mp3",
+    "title": "BRUH",
+    "audio": "sound/sound_us/movie_1.mp3"
+  }
+]

@@ -1,0 +1,47 @@
+[
+
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/bsh-lbld-basha-elbalad.mp3",
+    "title": "باشا البلد (basha elbalad)",
+    "audio": "sound/sound_eg/bsh-lbld-basha-elbalad.mp3"
+  },
+
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/y-yny-lyk-nt-msh-fhm-y-hj.mp3",
+    "title": "يا عيني عليك انت مش فاهم اي حاجة",
+    "audio": "sound/sound_eg/y-yny-lyk-nt-msh-fhm-y-hj.mp3"
+  },
+  
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/nt-yz-tbwz-khlqy.mp3",
+    "title": "إنت عايز تبوظ اخلاقي",
+    "audio": "sound/sound_eg/nt-yz-tbwz-khlqy.mp3"
+  },
+
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/n-mlt-yh.mp3",
+    "title": "انا عملت ايه",
+    "audio": "sound/sound_eg/n-mlt-yh.mp3"
+  },
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/ntw-msh-wzyn-tfhmw.mp3",
+    "title": "انتو مش عاوزين تفهموا",
+    "audio": "sound/sound_eg/ntw-msh-wzyn-tfhmw.mp3"
+  },
+ 
+ 
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/nt-mnyn-nt-mn-frns.mp3",
+    "title": "انت منين انت من فرنسا",
+    "audio": "sound/sound_eg/nt-mnyn-nt-mn-frns.mp3"
+  },
+
+
+
+
+  {
+    "sound_url": "https://www.myinstants.com/media/sounds/mt-ytsh.mp3",
+    "title": "متعيطش",
+    "audio": "sound/sound_eg/mt-ytsh.mp3"
+  }
+]
