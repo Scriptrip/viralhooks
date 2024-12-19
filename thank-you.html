@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Purchase!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .thank-you-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            color: #10B981;
+            margin-bottom: 1rem;
+        }
+
+        .access-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            background: linear-gradient(45deg, #10B981, #059669);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .access-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+
+        .instructions {
+            margin: 2rem 0;
+            text-align: left;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .support-info {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="success-icon">✓</div>
+        <h1>Thank You for Your Purchase!</h1>
+        <p>Your payment has been successfully processed.</p>
+
+        <div class="instructions">
+            <h2>Next Steps:</h2>
+            <ol>
+                <li>Click the "Access Content" button below</li>
+                <li>You will be redirected to Google Drive</li>
+                <li>Download your purchased content</li>
+                <li>Start creating amazing content!</li>
+            </ol>
+        </div>
+
+        <a href="#" class="access-button" id="accessButton">Access Content</a>
+
+        <div class="support-info">
+            <h3>Need Help?</h3>
+            <p>If you encounter any issues, please contact our support team at:</p>
+            <p>Email: support@example.com</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get package type from URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const packageId = urlParams.get('package');
+
+            // Define Google Drive links for each package
+            const driveLinks = {
+                'sound_ar_100': 'https://drive.google.com/drive/folders/your-arabic-sounds-folder',
+                'sound_en_100': 'https://drive.google.com/drive/folders/your-english-sounds-folder',
+                'video_100': 'https://drive.google.com/drive/folders/your-100-videos-folder',
+                'video_1000': 'https://drive.google.com/drive/folders/your-1000-videos-folder',
+                'mix_100': 'https://drive.google.com/drive/folders/your-mix-100-folder',
+                'mix_1000': 'https://drive.google.com/drive/folders/your-mix-1000-folder',
+                'custom': 'https://drive.google.com/drive/folders/your-custom-package-folder'
+            };
+
+            const accessButton = document.getElementById('accessButton');
+            
+            if (packageId && driveLinks[packageId]) {
+                accessButton.href = driveLinks[packageId];
+            } else {
+                accessButton.href = '#';
+                accessButton.textContent = 'Contact Support';
+                accessButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Please contact support to access your content.');
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
