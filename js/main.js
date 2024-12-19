@@ -6,14 +6,16 @@ const packagesData = {
             "name": "Mini Arabic Sound Package",
             "description": "100 Arabic sounds",
             "price": 1.99,
-            "image": "images/100_soundd.png"
+            "image": "images/100_soundd.png",
+            "buy_link": "https://paymob.xyz/JYena8pf/"
         },
         {
             "id": 2,
             "name": "Mini English Sound Package",
             "description": "100 English sounds",
             "price": 1.99,
-            "image": "images/100_soundd.png"
+            "image": "images/100_soundd.png",
+            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2ZlZJaVBXVExwOHE0cHF6djhHY1JTZz09X2RrNW9LTi9yWXZnaWlYMkdsYVJwbEE9PQ"
         }
     ],
     "videoOnly": [
@@ -22,13 +24,16 @@ const packagesData = {
             "name": "Videos Premium Package",
             "description": "Up to 100 viral hooks",
             "price": 4.99,
-            "image": "images/100_video.webp"
+            "image": "images/100_video.jpg",
+            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2a1luQWYrb2hrYVh6RGliWmlDNTZyQT09X3dVaGdNS2tkNkZRQ01CUitmYVVBV1E9PQ"
         },        {
             "id": 5,
             "name": "Videos Premium Package",
             "description": "Up to 1000 viral hooks",
             "price": 14.99,
-            "image": "images/1000_video.webp"
+            "image": "images/1000_video.jpg",
+            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2aWZpdFVTdGNEbEdTRlROTjhsc1N4UT09Xy9TbVRRK3FjNjc2b1d6eDlEdEJMNXc9PQ"
+        
         }
     ],
     "mix": [
@@ -37,14 +42,17 @@ const packagesData = {
             "name": "Mid Package",
             "description": "Random 100 videos and 200 sounds",
             "price": 4.99,
-            "image": "images/mix_deal_100.png"
+            "image": "images/mix_deal_100.png",
+            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2L0Z2MUJaMEtUUEpaSU05V1JhbFl1dz09X3FPQURYc2lrRWFPMkVIcDliMzBnWXc9PQ"
+       
         },
         {
             "id": 6,
             "name": "Ultimate Package",
             "description": "Complete collection of 1000 viral video hooks & more than 3000 sounds multilingual",
             "price": 24.99,
-            "image": "images/ultimate_mix.webp"
+            "image": "images/ultimate_mix.jpg",
+            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2S1gvT3RrdzlmcTRKM3Q4c3JoYkJ3Zz09X09nMWFFczNzaXVodHdZOXhsZHNnNnc9PQ"
         },
         {
             "id": 7,
@@ -54,7 +62,7 @@ const packagesData = {
             "image": "images/ultimate-package.jpg"
         }
     ]
-};
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     displayPackages(packagesData);
@@ -100,9 +108,10 @@ function displayPackages(packages) {
                         $${pkg.price.toFixed(2)}
                         <small>/one-time</small>
                     </div>
-                    <button class="buy-button" onclick="handlePurchase(${pkg.id})">
-                        Buy Now
-                    </button>
+                    ${pkg.buy_link ? 
+                        `<a href="${pkg.buy_link}&success_url=thank-you.html?package=${pkg.package_id}" target="_blank" class="buy-button">Buy Now</a>` :
+                        `<button class="buy-button disabled" disabled>Coming Soon</button>`
+                    }
                 </div>
             `;
             container.appendChild(card);
@@ -117,11 +126,6 @@ function displayPackages(packages) {
     } else {
         console.error('Packages section not found in the DOM');
     }
-}
-
-function handlePurchase(packageId) {
-    console.log(`Processing purchase for package ${packageId}`);
-    // Implement purchase logic here
 }
 
 let currentlyPlaying = null;
