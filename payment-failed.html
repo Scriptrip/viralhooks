@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Failed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .failed-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            color: #ef4444;
+            margin-bottom: 1rem;
+        }
+
+        .retry-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            background: linear-gradient(45deg, #10B981, #059669);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .retry-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="failed-container">
+        <div class="error-icon">✕</div>
+        <h1>Payment Failed</h1>
+        <p>We're sorry, but your payment could not be processed.</p>
+        <p>Please try again or contact our support team if the problem persists.</p>
+        
+        <a href="index.html" class="retry-button">Return to Packages</a>
+
+        <div class="support-info">
+            <h3>Need Help?</h3>
+            <p>Contact our support team at:</p>
+            <p>Email: support@example.com</p>
+        </div>
+    </div>
+</body>
+</html> 
