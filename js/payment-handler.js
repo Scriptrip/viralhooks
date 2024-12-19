@@ -37,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function getDriveLink(packageId) {
     const driveLinks = {
-        'sound_ar_100': 'https://drive.google.com/drive/folders/your-arabic-sounds-folder',
-        'sound_en_100': 'https://drive.google.com/drive/folders/your-english-sounds-folder',
-        'video_100': 'https://drive.google.com/drive/folders/your-100-videos-folder',
-        'video_1000': 'https://drive.google.com/drive/folders/your-1000-videos-folder',
-        'mix_100': 'https://drive.google.com/drive/folders/your-mix-100-folder',
-        'mix_1000': 'https://drive.google.com/drive/folders/your-mix-1000-folder',
-        'custom': 'https://drive.google.com/drive/folders/your-custom-package-folder'
+        'sound_ar_100': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing',
+        'sound_en_100': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing',
+        'video_100': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing',
+        'video_1000': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing',
+        'mix_100': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing',
+        'mix_1000': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing',
+        'custom': 'https://drive.google.com/drive/folders/1_3MqL23YsTXNAv7YlaQVxEbpgaMCe2jM?usp=sharing'
     };
     
     return driveLinks[packageId] || '#';

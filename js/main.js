@@ -8,7 +8,7 @@ const packagesData = {
             "description": "100 Arabic sounds",
             "price": 1.99,
             "image": "images/100_soundd.png",
-            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2UGhBTjFWbnR4dDRPTTMzVnhPSGpFZz09X3loT2I1SUNaVjJQdHhuVWZQT2R0YUE9PQ"
+            "buy_link": "https://paymob.xyz/JYena8pf/"
         },
         {
             "id": 2,
