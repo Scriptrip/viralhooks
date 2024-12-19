@@ -3,14 +3,16 @@ const packagesData = {
     "soundOnly": [
         {
             "id": 1,
+            "package_id": "sound_ar_100",
             "name": "Mini Arabic Sound Package",
             "description": "100 Arabic sounds",
             "price": 1.99,
             "image": "images/100_soundd.png",
-            "buy_link": "https://paymob.xyz/JYena8pf/"
+            "buy_link": "https://accept.paymobsolutions.com/standalone?ref=p_LRR2UGhBTjFWbnR4dDRPTTMzVnhPSGpFZz09X3loT2I1SUNaVjJQdHhuVWZQT2R0YUE9PQ"
         },
         {
             "id": 2,
+            "package_id": "sound_en_100",
             "name": "Mini English Sound Package",
             "description": "100 English sounds",
             "price": 1.99,
@@ -95,6 +97,11 @@ function displayPackages(packages) {
     // Render all package types
     ['soundOnly', 'videoOnly', 'mix'].forEach(type => {
         packages[type].forEach(pkg => {
+            // Ensure each package has a package_id
+            if (!pkg.package_id) {
+                pkg.package_id = `${type}_${pkg.id}`;
+            }
+            
             const card = document.createElement('div');
             card.className = 'package-card';
             card.innerHTML = `
@@ -109,7 +116,7 @@ function displayPackages(packages) {
                         <small>/one-time</small>
                     </div>
                     ${pkg.buy_link ? 
-                        `<a href="${pkg.buy_link}&success_url=thank-you.html?package=${pkg.package_id}" target="_blank" class="buy-button">Buy Now</a>` :
+                        `<a href="#" onclick="handlePaymentRedirect('${pkg.package_id}', '${pkg.buy_link}')" class="buy-button">Buy Now</a>` :
                         `<button class="buy-button disabled" disabled>Coming Soon</button>`
                     }
                 </div>
@@ -126,6 +133,17 @@ function displayPackages(packages) {
     } else {
         console.error('Packages section not found in the DOM');
     }
+}
+
+function handlePaymentRedirect(packageId, buyLink) {
+    // Store package ID before payment
+    localStorage.setItem('current_package_id', packageId);
+    
+    // Log for debugging
+    console.log('Storing package ID:', packageId);
+    
+    // Redirect to payment
+    window.location.href = buyLink;
 }
 
 let currentlyPlaying = null;
